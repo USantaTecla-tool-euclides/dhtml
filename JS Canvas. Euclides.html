@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Máximo Común Divisor</title>
+    <link rel="stylesheet" href="./euclides.css">
+    <script type="text/javascript" src="./euclides.js"></script>
+  </head>
+  <body onload="load();">
+    <header>
+      <h1>Máximo Común Divisor</h1>
+    </header>
+    <main id="main">
+      <canvas id="canvas" width=1000 height=500></canvas>
+    </main>
+    <aside id="aside">
+      <div id="frame"> 
+        <div id="square"></div>
+      </div>
+      <input type="button" value="+"  onclick="console.log('incrementGrid'); incrementGrid();">
+      <input type="button" value="Cálculo manual" onclick="console.log('applyGrid'); applyGrid();">
+      <input type="button" value="-" onclick="console.log('decrementGrid'); decrementGrid();">
+      <br>
+      <input type="button" value="Cálculo automático" onclick="console.log('si'); calculateGrid();">    
+      <br>
+      <p>Rectangulo: <span id="rectangle"></span></p>
+      <p>Cuadrado: <span id="grid"></span></p>
+      <p><span id="timesH"></span> veces a lo ancho</p>
+      <p><span id="timesV"></span> veces a lo alto</p>
+    </aside>
+    <input type="button" value="Nuevo rectangulo" onclick="console.log('resetRectangle'); resetRectangle();">
+  </body>
+</html>
